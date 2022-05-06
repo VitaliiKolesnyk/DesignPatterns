@@ -8,6 +8,7 @@ import patterns.structural.composite.employee.Developer;
 import patterns.structural.composite.employee.Employee;
 import patterns.structural.composite.employee.SalesManager;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -18,8 +19,8 @@ public class Main {
         Employee javaDeveloper = new Developer("Jack", 15000);
         Employee pythonDeveloper = new Developer("Bob", 16000);
         
-        Department salesDepartment = new SalesDepartment("Sales", List.of(salesHead, salesManager));
-        Department itDepartment = new ItDepartment("IT", List.of(javaDeveloper, pythonDeveloper));
+        Department salesDepartment = new SalesDepartment("Sales", Arrays.asList(salesHead, salesManager));
+        Department itDepartment = new ItDepartment("IT", Arrays.asList(javaDeveloper, pythonDeveloper));
         
         Company company = new Company("MyCompany", List.of(salesDepartment, itDepartment));
 

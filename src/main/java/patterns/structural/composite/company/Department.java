@@ -11,4 +11,12 @@ import java.util.List;
 public abstract class Department {
     private String depName;
     List<Employee> employeeList;
+    
+    public void addEmployee(Employee employee) {
+        employeeList.add(employee);
+    }
+    
+    public void removeEmployee(Employee employee) {
+        employeeList.remove(employee);
+    }
 }
