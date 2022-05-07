@@ -1,7 +1,5 @@
 package patterns.structural.facade.lock;
 
-import patterns.structural.facade.lock.Lock;
-
 public class WindowLock implements Lock {
     private boolean isLocked;
     

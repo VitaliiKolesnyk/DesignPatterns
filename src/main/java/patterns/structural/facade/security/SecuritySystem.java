@@ -1,4 +1,4 @@
-package patterns.structural.facade;
+package patterns.structural.facade.security;
 
 import patterns.structural.facade.lock.DoorLock;
 import patterns.structural.facade.lock.WindowLock;
@@ -8,7 +8,7 @@ import patterns.structural.facade.movementDetector.RoomMovementDetector;
 
 import javax.naming.OperationNotSupportedException;
 
-public class SecuritySystem {
+public class SecuritySystem implements Security {
     DoorLock doorLock = new DoorLock();
     WindowLock windowLock = new WindowLock();
     KitchenMovementDetector kitchenMovementDetector = new KitchenMovementDetector();

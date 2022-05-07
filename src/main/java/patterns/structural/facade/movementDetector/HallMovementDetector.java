@@ -1,6 +1,5 @@
 package patterns.structural.facade.movementDetector;
 
-
 public class HallMovementDetector implements MovementDetector {
     private int sensitivity = 40;
     private boolean turnedOn;

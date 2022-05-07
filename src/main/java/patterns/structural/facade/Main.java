@@ -1,10 +1,13 @@
 package patterns.structural.facade;
 
+import patterns.structural.facade.security.Security;
+import patterns.structural.facade.security.SecuritySystem;
+
 import javax.naming.OperationNotSupportedException;
 
 public class Main {
     public static void main(String[] args) {
-        SecuritySystem securitySystem = new SecuritySystem();
+        Security securitySystem = new SecuritySystem();
 
         securitySystem.on();
         securitySystem.getSecurityStatus();
