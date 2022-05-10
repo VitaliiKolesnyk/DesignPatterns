@@ -7,6 +7,7 @@ public class User {
     private long id;
     private String name;
     private String password;
+    private String address;
     private List<User> friends;
 
     public User(){}
